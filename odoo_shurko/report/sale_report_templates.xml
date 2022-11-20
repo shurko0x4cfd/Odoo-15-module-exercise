@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<odoo>
+	<template id="report_saleorder_document_inherit_odoo_shurko" inherit_id="sale.report_saleorder_document">
+		<xpath expr="//div[@id='informations']" position="inside">
+			<div t-if="doc.test != False and len(doc.test) > 0" class="col-auto col-3 mw-100 mb-2">
+				<strong>Test:</strong>
+				<p class="m-0" t-field="doc.test" />
+			</div>
+		</xpath>
+	</template>
+</odoo>
